@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donadío Racing - Autos de Competición</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header fijo -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-red-600">Donadío Racing</div>
+
+      <!-- Botón hamburguesa (solo visible en sm y menor) -->
+      <button id="menu-btn" class="md:hidden text-gray-700 hover:text-red-600 focus:outline-none" aria-label="Toggle menu">
+        <!-- Icono hamburguesa SVG -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+
+      <!-- Menú desktop -->
+      <nav id="menu" class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-700 hover:text-red-600">Inicio</a>
+        <a href="#servicios" class="text-gray-700 hover:text-red-600">Servicios</a>
+        <a href="#proyectos" class="text-gray-700 hover:text-red-600">Proyectos</a>
+        <a href="#contacto" class="text-gray-700 hover:text-red-600">Contacto</a>
+      </nav>
+    </div>
+
+    <!-- Menú móvil desplegable -->
+    <nav id="menu-mobile" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white border-t border-gray-200">
+      <a href="#" class="block text-gray-700 hover:text-red-600">Inicio</a>
+      <a href="#servicios" class="block text-gray-700 hover:text-red-600">Servicios</a>
+      <a href="#proyectos" class="block text-gray-700 hover:text-red-600">Proyectos</a>
+      <a href="#contacto" class="block text-gray-700 hover:text-red-600">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Espacio para que el contenido no quede debajo del header fijo -->
+  <div class="h-16"></div>
+
+  <!-- Hero -->
+  <section class="bg-cover bg-center h-[80vh] text-white flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1617137555671-e5edec6e666b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center max-w-xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Construimos Potencia. Diseñamos Velocidad.</h1>
+      <p class="text-lg mb-6">Especialistas en autos de competición de alto rendimiento.</p>
+      <a href="#contacto" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold">Solicitá una cotización</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-10">Nuestros Servicios</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Diseño Aerodinámico</h3>
+          <p>Optimizamos cada línea para lograr la mayor eficiencia y velocidad en pista.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Chasis y Estructura</h3>
+          <p>Fabricamos estructuras resistentes y livianas adaptadas a cada categoría.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Preparación de Motores</h3>
+          <p>Potenciamos motores con tecnología de punta para alto rendimiento competitivo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-10">Proyectos Destacados</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1620308544998-02bdb5bb8a5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Auto de turismo en pista" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">GT-R Turismo Carretera</h3>
+            <p>Auto ganador de 3 campeonatos regionales, con diseño aerodinámico exclusivo.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1610905376670-5e7e0e8a3cfb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Monoplaza de Fórmula 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Fórmula Fuerza F3</h3>
+            <p>Monoplaza de alto rendimiento desarrollado para jóvenes pilotos profesionales.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1665677482293-c6fb0a9be199?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Auto de rally en acción" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Rally EvoRaptor</h3>
+            <p>Diseñado para todo terreno extremo, probado en condiciones reales de competencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 bg-white">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Contacto</h2>
+      <p class="mb-6">¿Querés construir tu próximo auto de competición con nosotros? Escribinos y te responderemos a la brevedad.</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nombre y apellido" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+        <input type="email" placeholder="Correo electrónico" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+        <textarea placeholder="Mensaje" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-3"></textarea>
+        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2025 Donadío Racing. Todos los derechos reservados.</p>
+      <p class="text-sm mt-2">Desarrollado con Tailwind CSS y ❤️</p>
+    </div>
+  </footer>
+
+  <!-- Script menú hamburguesa -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu-mobile');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
